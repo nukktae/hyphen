@@ -378,62 +378,44 @@
     </section>
 
   <!-- Slide 4: 유지심사 관리 -->
-  <section id="slide-maintenance" class="relative w-[1920px] h-[1080px] overflow-hidden bg-white pt-[56px] pb-[100px] px-[120px] flex flex-col">
-    <div class="mb-5 w-[550px]">
-      <span class="text-[#2878F5] font-bold text-2xl tracking-widest uppercase">핵심 기능 01</span>
-      <h1 class="text-6xl font-extrabold mt-2 leading-tight">복잡한 유지심사를 <br><span class="text-[#2878F5]">'상태 관리'</span>로 바꿨다</h1>
+  <section id="slide-maintenance" class="relative w-[1920px] h-[1080px] overflow-hidden bg-white pt-[48px] pb-[100px] px-[120px] flex flex-col">
+    <div class="flex-shrink-0 mb-4 w-[520px]">
+      <span class="text-[#2878F5] font-bold text-xl tracking-widest uppercase">핵심 기능 01</span>
+      <h1 class="text-5xl font-extrabold mt-1 leading-tight">복잡한 유지심사를 <br><span class="text-[#2878F5]">'상태 관리'</span>로 바꿨다</h1>
     </div>
 
-    <!-- Side by side: 기존 방식 (left) | 우리 솔루션 (right), upper row -->
-    <div class="flex gap-8 items-stretch flex-1 min-h-0 mt-0">
-      <!-- Left: 기존 방식 (separate block) -->
-      <div class="flex-shrink-0 flex items-center">
-        <div class="bg-gray-50 rounded-3xl p-10 border border-gray-100 opacity-60 w-[480px]">
-          <h3 class="text-3xl font-bold text-gray-400 mb-6">기존 방식</h3>
-          <ul class="space-y-4">
-            <li class="flex items-center text-2xl text-gray-400">
-              <i class="fa-solid fa-envelope w-12 text-3xl"></i> 이메일 수합 및 확인
-            </li>
-            <li class="flex items-center text-2xl text-gray-400">
-              <i class="fa-solid fa-comment w-12 text-3xl"></i> 카카오톡 개별 문의
-            </li>
-            <li class="flex items-center text-2xl text-gray-400">
-              <i class="fa-solid fa-clipboard-list w-12 text-3xl"></i> 파편화된 게시판 관리
-            </li>
-            <li class="flex items-center text-2xl text-gray-400">
-              <i class="fa-solid fa-circle-xmark w-12 text-3xl"></i> 기준 없는 수기 체크
-            </li>
-          </ul>
+    <!-- Side by side: 기존 방식 (left, desktop frame) | 우리 솔루션 (right, phone + video) -->
+    <div class="flex gap-10 items-center flex-1 min-h-0 mt-2">
+      <!-- Left: 기존 방식 — desktop frame (no image) -->
+      <div class="flex-shrink-0 flex items-center gap-6">
+        <div class="flex flex-col items-center">
+          <h3 class="text-2xl font-bold text-[#64748B] mb-2">기존 방식</h3>
+          <p class="text-base text-[#94A3B8] mb-4 max-w-[420px] text-center leading-relaxed">이메일 수합 · 카카오톡 개별 문의 · 파편화된 게시판 · 수기 체크</p>
+          <!-- Desktop frame: monitor/browser style, empty screen -->
+          <div class="rounded-xl overflow-hidden bg-[#1e293b] flex-shrink-0 w-[420px]" style="box-shadow: 0 25px 60px -15px rgba(0,0,0,0.25), 0 0 0 1px rgba(0,0,0,0.05);">
+            <!-- Title bar -->
+            <div class="h-10 bg-[#334155] flex items-center gap-2 px-3">
+              <span class="w-3 h-3 rounded-full bg-[#64748b]"></span>
+              <span class="w-3 h-3 rounded-full bg-[#64748b]"></span>
+              <span class="w-3 h-3 rounded-full bg-[#64748b]"></span>
+            </div>
+            <!-- Screen area (empty) -->
+            <div class="h-[280px] bg-[#f1f5f9] flex items-center justify-center">
+              <span class="text-[#94a3b8] text-sm font-medium">—</span>
+            </div>
+          </div>
         </div>
-        <span class="flex-shrink-0 mx-4 text-gray-300 self-center"><i class="fa-solid fa-chevron-right text-4xl"></i></span>
+        <span class="flex-shrink-0 text-[#2878F5] text-3xl"><i class="fa-solid fa-chevron-right"></i></span>
       </div>
 
-      <!-- Right: 우리 솔루션 (separate block) -->
-      <div class="flex-1 min-h-0 min-w-0 bg-[#F8FAFC] rounded-3xl p-10 border border-gray-100 shadow-[0_24px_60px_-15px_rgba(40,120,245,0.08)] absolute left-[856px] top-[31px]">
-      <div class="flex items-center justify-between mb-6">
-        <h3 class="text-4xl font-bold text-[#2C303D]">우리 솔루션</h3>
-        <span class="text-[#64748B] font-medium text-2xl">한 화면에서 상태를 보고, 일정을 따른다</span>
-      </div>
-      <div class="grid grid-cols-2 gap-8 items-stretch">
-          <!-- Top row: one card full width -->
-          <div class="col-span-2 flex flex-col items-center justify-center w-[800px] rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm">
-            <div class="flex-1 min-h-[360px] w-[800px] h-[979px] p-6 flex items-center justify-center bg-white">
-              <img src="gpa.png" alt="나의 유지심사 현황 — GPA·이수학점·봉사·행사 항목별 상태" class="max-w-full max-h-full w-auto h-full object-contain rounded-xl" />
-            </div>
-            <p class="text-center text-xl font-semibold text-[#64748B] py-4 border-t border-gray-50">나의 유지심사 현황</p>
-          </div>
-          <!-- Bottom row: two cards side by side -->
-          <div class="flex flex-col rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm">
-            <div class="flex-1 min-h-[320px] p-6 flex items-center justify-center bg-white">
-              <img src="gpa1.png" alt="2025 유지심사 진행률 · 유의 필요 알림" class="max-w-full max-h-full w-auto h-full object-contain rounded-xl" />
-            </div>
-            <p class="text-center text-xl font-semibold text-[#64748B] py-4 border-t border-gray-50">진행률 · 유의 필요</p>
-          </div>
-          <div class="flex flex-col rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm">
-            <div class="flex-1 min-h-[320px] p-6 flex items-center justify-center bg-white">
-              <img src="gpa3.png" alt="다음 일정 — 학점 업데이트 4월 30일" class="max-w-full max-h-full w-auto h-full object-contain rounded-xl" />
-            </div>
-            <p class="text-center text-xl font-semibold text-[#64748B] py-4 border-t border-gray-50">다음 일정</p>
+      <!-- Right: 우리 솔루션 — phone frame with video (like intro slide) -->
+      <div class="flex-1 flex flex-col items-center min-w-0 min-h-0">
+        <h3 class="text-3xl font-bold text-[#2C303D] mb-2">우리 솔루션</h3>
+        <span class="text-[#64748B] font-medium text-xl mb-6">한 화면에서 상태를 보고, 일정을 따른다</span>
+        <!-- Phone frame with video (same style as slide-intro) -->
+        <div class="relative w-[500px] h-[900px] rounded-[60px] overflow-hidden bg-white flex-shrink-0" style="box-shadow: 0 0 0 12px #e5e5e7, 0 0 0 14px #f5f5f7, 0 30px 90px -20px rgba(0,0,0,0.25);">
+          <div class="absolute inset-[14px] rounded-[48px] overflow-hidden bg-black">
+            <video class="w-full h-full object-contain" src="" controls muted playsinline loop aria-label="유지심사 앱 데모"></video>
           </div>
         </div>
       </div>
