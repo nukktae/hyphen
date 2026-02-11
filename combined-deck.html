@@ -45,21 +45,22 @@
         <div class="absolute left-1/2 top-[247px] -translate-x-1/2 w-[500px] h-[900px] rounded-[60px] z-10 overflow-hidden bg-white" style="box-shadow: 0 0 0 12px #e5e5e7, 0 0 0 14px #f5f5f7, 0 30px 90px -20px rgba(0,0,0,0.25);">
             <div class="absolute inset-[14px] rounded-[48px] overflow-hidden bg-white">
                 <img src="home.png" alt="Hyphen 앱 홈 화면" class="w-full h-full object-cover object-top" />
+                <img src="sss.gif" alt="" class="absolute right-4 top-49 w-64 h-64 object-contain z-10 pointer-events-none" aria-hidden="true" />
             </div>
         </div>
         <!-- Cute character -->
         <img src="bear.png" alt="" class="absolute left-[280px] top-[649px] w-[600px] h-[400px] object-contain z-10">
-        <!-- Right: Hyphen + 장학생들의 연결고리 -->
-        <div class="absolute right-[120px] top-1/2 -translate-y-1/2 text-right z-10">
-            <p class="text-[128px] font-extrabold text-white leading-none tracking-tight" style="word-wrap: break-word;">Hyphen</p>
-            <p class="text-[36px] font-bold text-white mt-4" style="word-wrap: break-word;">장학생들의 연결고리</p>
+        <!-- Right: 장학생들의 연결고리 → Hyphen → logo + 신한장학재단 -->
+        <div class="absolute right-[120px] top-1/2 -translate-y-1/2 text-right z-10 flex flex-col items-end">
+            <p class="text-[36px] font-bold text-white leading-tight" style="word-wrap: break-word;">장학생들의 연결고리</p>
+            <p class="text-[128px] font-extrabold text-white leading-none tracking-tight mt-2" style="word-wrap: break-word;">Hyphen</p>
+            <div class="flex items-center gap-4 mt-6">
+                <img src="shinhanlogo.png" alt="신한장학재단" class="h-8 w-auto object-contain">
+                <span class="text-white text-lg font-medium tracking-wide">신한장학재단</span>
+            </div>
         </div>
         <!-- Bottom accent bar -->
         <div class="absolute right-0 bottom-[140px] w-[520px] h-[52px] bg-[#0046FF]"></div>
-        <footer class="absolute bottom-0 left-0 right-0 h-14 bg-[#0046FF] flex items-center justify-center z-20">
-            <img src="shinhanlogo.png" alt="신한장학재단" class="h-8 w-auto object-contain mr-4">
-            <span class="text-white text-lg font-medium tracking-wide">신한장학재단</span>
-        </footer>
     </section>
 
     <!-- SLIDE 1: 과제 제시 — 조건 정리 -->
@@ -74,37 +75,37 @@
                 <div class="w-16 h-16 bg-[#2878F5]/10 rounded-2xl flex items-center justify-center text-[#2878F5] text-3xl">
                     <i class="fa-solid fa-user-graduate"></i>
                 </div>
-                <span class="text-3xl font-bold">장학생 선발 관리</span>
-            </div>
-            <div class="bg-white p-10 rounded-3xl border-2 border-[#2878F5]/10 shadow-sm flex items-center gap-6">
-                <div class="w-16 h-16 bg-[#2878F5]/10 rounded-2xl flex items-center justify-center text-[#2878F5] text-3xl">
-                    <i class="fa-solid fa-file-signature"></i>
-                </div>
-                <span class="text-3xl font-bold">활동 보고서 제출</span>
-            </div>
-            <div class="bg-white p-10 rounded-3xl border-2 border-[#2878F5]/10 shadow-sm flex items-center gap-6">
-                <div class="w-16 h-16 bg-[#2878F5]/10 rounded-2xl flex items-center justify-center text-[#2878F5] text-3xl">
-                    <i class="fa-solid fa-calendar-check"></i>
-                </div>
-                <span class="text-3xl font-bold">유지심사 프로세스</span>
-            </div>
-            <div class="bg-white p-10 rounded-3xl border-2 border-[#2878F5]/10 shadow-sm flex items-center gap-6">
-                <div class="w-16 h-16 bg-[#2878F5]/10 rounded-2xl flex items-center justify-center text-[#2878F5] text-3xl">
-                    <i class="fa-solid fa-users-rectangle"></i>
-                </div>
-                <span class="text-3xl font-bold">자치회 활동 기록</span>
+                <span class="text-3xl font-bold">장학생 프로필 기능</span>
             </div>
             <div class="bg-white p-10 rounded-3xl border-2 border-[#2878F5]/10 shadow-sm flex items-center gap-6">
                 <div class="w-16 h-16 bg-[#2878F5]/10 rounded-2xl flex items-center justify-center text-[#2878F5] text-3xl">
                     <i class="fa-solid fa-comments"></i>
                 </div>
-                <span class="text-3xl font-bold">커뮤니티 활성화</span>
+                <span class="text-3xl font-bold">커뮤니티 기능</span>
             </div>
             <div class="bg-white p-10 rounded-3xl border-2 border-[#2878F5]/10 shadow-sm flex items-center gap-6">
                 <div class="w-16 h-16 bg-[#2878F5]/10 rounded-2xl flex items-center justify-center text-[#2878F5] text-3xl">
-                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-solid fa-chart-line"></i>
                 </div>
-                <span class="text-3xl font-bold">공지 및 알림 체계</span>
+                <span class="text-3xl font-bold leading-tight">활동 트래킹 (출석, 사진, 성과 기록 등)</span>
+            </div>
+            <div class="bg-white p-10 rounded-3xl border-2 border-[#2878F5]/10 shadow-sm flex items-center gap-6">
+                <div class="w-16 h-16 bg-[#2878F5]/10 rounded-2xl flex items-center justify-center text-[#2878F5] text-3xl">
+                    <i class="fa-solid fa-folder-open"></i>
+                </div>
+                <span class="text-3xl font-bold leading-tight">콘텐츠 아카이브 (특강 영상, 교육자료 등)</span>
+            </div>
+            <div class="bg-white p-10 rounded-3xl border-2 border-[#2878F5]/10 shadow-sm flex items-center gap-6">
+                <div class="w-16 h-16 bg-[#2878F5]/10 rounded-2xl flex items-center justify-center text-[#2878F5] text-3xl">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <span class="text-3xl font-bold leading-tight">장학생 네트워크 맵 (기수, 전공, 지역 등)</span>
+            </div>
+            <div class="bg-white p-10 rounded-3xl border-2 border-[#2878F5]/10 shadow-sm flex items-center gap-6">
+                <div class="w-16 h-16 bg-[#2878F5]/10 rounded-2xl flex items-center justify-center text-[#2878F5] text-3xl">
+                    <i class="fa-solid fa-people-arrows"></i>
+                </div>
+                <span class="text-3xl font-bold leading-tight">매칭 시스템 (멘토링, 프로젝트 팀)</span>
             </div>
         </div>
         <footer class="absolute bottom-0 left-0 right-0 h-14 bg-[#0046FF] flex items-center justify-center">
@@ -305,11 +306,11 @@
             <p class="text-2xl text-[#64748B] font-medium mt-4">현재 구조는 이렇게 흩어져 있습니다</p>
         </div>
 
-        <!-- 좌 → 우 대비: [현재 구조] → [하나의 흐름으로 보이는 구조] -->
+        <!-- 좌 → 우 대비: [As Is] → [To Be] -->
         <div class="flex-1 grid grid-cols-[1fr_auto_1fr] gap-8 items-stretch min-h-[480px] max-w-[1680px] mx-auto">
-            <!-- LEFT: 현재 구조 (비활성 느낌, 회색/연한 블루) -->
+            <!-- LEFT: As Is (비활성 느낌, 회색/연한 블루) -->
             <div class="bg-white rounded-[32px] p-10 border border-gray-100 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.06)] flex flex-col justify-center">
-                <p class="text-[#94A3B8] font-bold text-xl tracking-wide mb-8">현재 구조</p>
+                <p class="text-[#94A3B8] font-bold text-xl tracking-wide mb-8">As Is</p>
                 <ul class="space-y-8">
                     <li class="flex items-center gap-4">
                         <span class="w-14 h-14 rounded-2xl bg-[#E2E8F0] flex items-center justify-center text-[#94A3B8] text-2xl shrink-0"><i class="fa-solid fa-envelope"></i></span>
@@ -339,13 +340,13 @@
                 <svg class="w-16 h-16 text-[#2878F5] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                 </svg>
-                <p class="text-[#94A3B8] font-bold text-sm mt-3 tracking-widest uppercase">Fragmented</p>
-                <p class="text-[#2878F5] font-bold text-sm tracking-widest uppercase">Unified</p>
+                <p class="text-[#94A3B8] font-bold text-sm mt-3 tracking-widest uppercase">As Is</p>
+                <p class="text-[#2878F5] font-bold text-sm tracking-widest uppercase">To Be</p>
             </div>
 
-            <!-- RIGHT: 정의된 방향(상태) — 하나의 흐름으로 보이는 구조 -->
+            <!-- RIGHT: To Be — 하나의 흐름으로 보이는 구조 -->
             <div class="rounded-[32px] p-10 flex flex-col justify-center bg-gradient-to-br from-[#E8F1FF] to-[#D4E5FF] border border-[#2878F5]/20 shadow-[0_20px_50px_-12px_rgba(40,120,245,0.12)]">
-                <p class="text-[#2878F5] font-bold text-xl tracking-wide mb-8">하나의 흐름으로 보이는 구조</p>
+                <p class="text-[#2878F5] font-bold text-xl tracking-wide mb-8">To Be</p>
                 <ul class="space-y-8">
                     <li class="flex items-center gap-4">
                         <span class="w-14 h-14 rounded-2xl bg-[#2878F5]/20 flex items-center justify-center text-[#2878F5] text-2xl shrink-0"><i class="fa-solid fa-layer-group"></i></span>
@@ -377,19 +378,19 @@
         </footer>
     </section>
 
-  <!-- Slide 4: 유지심사 관리 -->
+    <!-- Slide 4: 유지심사 관리 -->
   <section id="slide-maintenance" class="relative w-[1920px] h-[1080px] overflow-hidden bg-white pt-[48px] pb-[100px] px-[120px] flex flex-col">
     <div class="flex-shrink-0 mb-4 w-[520px]">
       <span class="text-[#2878F5] font-bold text-xl tracking-widest uppercase">핵심 기능 01</span>
       <h1 class="text-5xl font-extrabold mt-1 leading-tight">복잡한 유지심사를 <br><span class="text-[#2878F5]">'상태 관리'</span>로</h1>
     </div>
 
-    <!-- Side by side: 기존 방식 (left, desktop frame) | 우리 솔루션 (right, phone + video) -->
+    <!-- Side by side: As Is (left) | To Be (right) -->
     <div class="flex gap-10 items-center flex-1 min-h-0 mt-2">
-      <!-- Left: 기존 방식 — desktop frame (no image) -->
+      <!-- Left: As Is — desktop frame (no image) -->
       <div class="flex-shrink-0 flex items-center gap-6">
         <div class="flex flex-col items-center">
-          <h3 class="text-2xl font-bold text-[#64748B] mb-2">기존 방식</h3>
+          <h3 class="text-2xl font-bold text-[#64748B] mb-2">As Is</h3>
           <p class="text-base text-[#94A3B8] mb-4 max-w-[420px] text-center leading-relaxed">이메일 수합 · 카카오톡 개별 문의 · 파편화된 게시판 · 수기 체크</p>
           <!-- Desktop frame: monitor/browser style, empty screen -->
           <div class="rounded-xl overflow-hidden bg-[#1e293b] flex-shrink-0 w-[420px]" style="box-shadow: 0 25px 60px -15px rgba(0,0,0,0.25), 0 0 0 1px rgba(0,0,0,0.05);">
@@ -408,9 +409,9 @@
         <span class="flex-shrink-0 text-[#2878F5] text-3xl"><i class="fa-solid fa-chevron-right"></i></span>
       </div>
 
-      <!-- Right: 우리 솔루션 — phone frame with video (like intro slide) -->
+      <!-- Right: To Be — phone frame with video (like intro slide) -->
       <div class="flex-1 flex flex-col items-center min-w-0 min-h-0">
-        <h3 class="text-3xl font-bold text-[#2C303D] mb-2">우리 솔루션</h3>
+        <h3 class="text-3xl font-bold text-[#2C303D] mb-2">To Be</h3>
         <span class="text-[#64748B] font-medium text-xl mb-6">한 화면에서 상태를 보고, 일정을 따른다</span>
         <!-- Phone frame with video (same style as slide-intro) -->
         <div class="relative w-[500px] h-[900px] rounded-[60px] overflow-hidden bg-white flex-shrink-0" style="box-shadow: 0 0 0 12px #e5e5e7, 0 0 0 14px #f5f5f7, 0 30px 90px -20px rgba(0,0,0,0.25);">
@@ -426,19 +427,19 @@
     </footer>
   </section>
 
-  <!-- Slide 5: 자치회 활동 기록 — 기존 vs 리디자인 비교 영상 -->
+  <!-- Slide 5: 활동 기록 작성 — As Is vs To Be -->
   <section id="slide-activity" class="relative w-[1920px] h-[1080px] overflow-hidden bg-[#2C303D] pt-[80px] pb-[100px] px-[120px] flex flex-col justify-center text-white">
     <div class="text-center mb-10">
       <span class="text-[#6AA3FF] font-bold text-2xl tracking-widest uppercase">핵심 기능 02</span>
-      <h1 class="text-5xl font-extrabold mt-3">"같은 일을 훨씬 빠르게"</h1>
-      <p class="text-xl text-gray-400 mt-3 font-light font-mono">자치회 활동 기록 — 현재 UX vs 리디자인 UX 비교</p>
+      <h1 class="text-5xl font-extrabold mt-3">활동 기록 작성, 훨씬 빠르게</h1>
+      <p class="text-xl text-gray-400 mt-3 font-light">As Is vs To Be</p>
     </div>
 
     <div class="flex justify-between items-stretch gap-12 flex-1 min-h-0">
-      <!-- Left: 기존 방식 (Current UI/UX) — 비디오 + 요약 -->
+      <!-- Left: As Is (Current UI/UX) — 비디오 + 요약 -->
       <div class="flex-1 flex flex-col items-center min-w-0">
         <div class="w-full h-full flex flex-col bg-white/5 border border-white/10 rounded-3xl p-6">
-          <p class="text-center text-xl font-bold text-gray-400 mb-4">기존 방식 (수기 위주)</p>
+          <p class="text-center text-xl font-bold text-gray-400 mb-4">As Is</p>
           <!-- 16:9 비디오 영역 — src에 current-ux.mp4 등 설정 -->
           <div class="relative aspect-video w-full rounded-2xl overflow-hidden bg-black/40 border border-white/10 flex-shrink-0">
             <video class="w-full h-full object-contain" src="" controls muted playsinline aria-label="기존 UI/UX 데모"></video>
@@ -459,10 +460,10 @@
         </div>
       </div>
 
-      <!-- Right: 우리 서비스 (Redesigned UI/UX) — 비디오 + 요약 -->
+      <!-- Right: To Be (Redesigned UI/UX) — 비디오 + 요약 -->
       <div class="flex-1 flex flex-col items-center min-w-0">
         <div class="w-full h-full flex flex-col bg-gradient-to-b from-[#2878F5] to-[#1E5BBD] rounded-3xl p-6 ring-4 ring-blue-400/30">
-          <p class="text-center text-xl font-bold mb-4">우리 서비스 (자동화)</p>
+          <p class="text-center text-xl font-bold mb-4">To Be</p>
           <!-- 16:9 비디오 영역 — src에 redesigned-ux.mp4 등 설정 -->
           <div class="relative aspect-video w-full rounded-2xl overflow-hidden bg-black/30 border border-white/20 flex-shrink-0">
             <video class="w-full h-full object-contain" src="" controls muted playsinline aria-label="리디자인 UI/UX 데모"></video>
@@ -487,7 +488,7 @@
   <section id="slide-networking" class="relative w-[1920px] h-[1080px] overflow-hidden bg-white pt-[80px] pb-[100px] px-[120px] flex flex-col">
     <div class="mb-8">
       <span class="text-[#2878F5] font-bold text-2xl tracking-widest uppercase">핵심 기능 03</span>
-      <h1 class="text-6xl font-extrabold mt-2 leading-tight">"행사에서 끝나는 관계를"</h1>
+      <h1 class="text-6xl font-extrabold mt-2 leading-tight">행사가 끝나도 만남은 오랫동안</h1>
       <p class="text-xl text-[#64748B] font-medium mt-3">커뮤니티 화면 · QR로 학생·멘토 즉시 연결</p>
     </div>
 
@@ -567,7 +568,7 @@
   <section id="slide-admin" class="relative w-[1920px] h-[1080px] overflow-hidden bg-[#F8FAFC] pt-[80px] pb-[100px] px-[120px] flex flex-col">
     <div class="mb-6">
       <span class="text-[#2878F5] font-bold text-2xl tracking-widest uppercase">Admin Perspective</span>
-      <h1 class="text-6xl font-extrabold mt-2 leading-tight">관리자는 이제 '확인'이 아니라 <span class="text-[#2878F5]">'운영'</span>을</h1>
+      <h1 class="text-6xl font-extrabold mt-2 leading-tight">관리자의 일은 확인이 아닌 <span class="text-[#2878F5]">운영</span></h1>
       <p class="text-xl text-[#64748B] font-medium mt-2">통합 대시보드 · CRM</p>
     </div>
 
@@ -609,8 +610,8 @@
   <section id="slide-admin-features" class="relative w-[1920px] h-[1080px] overflow-hidden bg-white pt-[80px] pb-[100px] px-[120px] flex flex-col">
     <div class="mb-6">
       <span class="text-[#2878F5] font-bold text-2xl tracking-widest uppercase">Admin Perspective</span>
-      <h1 class="text-6xl font-extrabold mt-2 leading-tight">채팅 · 자치회 · 유지심사 · 학생관리</h1>
-      <p class="text-xl text-[#64748B] font-medium mt-2">가장 많이 쓰는 기능만 한눈에</p>
+      <h1 class="text-6xl font-extrabold mt-2 leading-tight">장학생의 활동과 바로 연동되는 <span class="text-[#2878F5]">관리자</span></h1>
+      <p class="text-xl text-[#64748B] font-medium mt-2">채팅 · 자치회 · 유지심사 · 학생관리 — 가장 많이 쓰는 기능만 한눈에</p>
     </div>
 
     <div class="grid grid-cols-2 gap-6 flex-1 min-h-0">
@@ -670,11 +671,11 @@
     <div class="text-center max-w-[1000px] mx-auto">
       <span class="text-[#2878F5] font-bold text-2xl tracking-widest uppercase">Conclusion</span>
       <h1 class="text-6xl font-extrabold text-[#2C303D] mt-4 leading-tight">
-        흩어진 흐름을 <span class="text-[#2878F5]">하나로</span>
+        흩어진 흐름을 <span class="text-[#2878F5]">하나로</span>,<br/>
+        그 안에서 연결되는 장학생
       </h1>
       <p class="text-2xl text-[#64748B] font-medium mt-8 leading-relaxed">
-        그래서 저희는 기능을 하나씩 고친 게 아니라,<br/>
-        하나의 구조를 만들었습니다.
+        기능을 고치는 것을 넘어 장학생을 위한 하나의 구조를 만들었습니다.
       </p>
       <div class="mt-16 pt-12 border-t border-gray-200">
         <p class="text-xl text-gray-500 font-light">신한장학재단 장학생 관리의 새로운 기준</p>
@@ -687,12 +688,12 @@
     </footer>
   </section>
 
-  <!-- Slide: Team — 이걸 만든 사람들 -->
+  <!-- Slide: Team — Hyphen 구성원 -->
   <section id="slide-team" class="relative w-[1920px] h-[1080px] overflow-hidden bg-[#F8FAFC] pt-[100px] pb-[100px] px-[120px] flex flex-col">
     <div class="text-center mb-16">
       <span class="text-[#2878F5] font-bold text-2xl tracking-widest uppercase">Team</span>
-      <h1 class="text-5xl font-extrabold text-[#2C303D] mt-3">이걸 만든 사람들</h1>
-      <p class="text-xl text-gray-500 mt-4 max-w-3xl mx-auto leading-relaxed">이건 우연히 나온 결과가 아니라, 역할이 분명한 팀이 만든 결과다</p>
+      <h1 class="text-5xl font-extrabold text-[#2C303D] mt-3">Hyphen 구성원</h1>
+      <p class="text-xl text-gray-500 mt-4 max-w-3xl mx-auto leading-relaxed">우연한 성과가 아닌 팀워크의 결과</p>
     </div>
 
     <div class="grid grid-cols-4 gap-x-12 gap-y-0 flex-1 max-w-[1600px] mx-auto">
@@ -742,21 +743,17 @@
 
   <!-- Slide 9: Thanks & Q&A -->
   <section id="slide-ending" class="relative w-[1920px] h-[1080px] overflow-hidden bg-gradient-to-br from-[#6AA3FF] via-[#2E67FF] to-[#2C303D] flex flex-col items-center justify-center text-white">
-    <div class="absolute top-0 left-0 w-full h-full opacity-10">
+    <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
       <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-white rounded-full blur-[150px]"></div>
       <div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-[#2878F5] rounded-full blur-[150px]"></div>
     </div>
 
-    <div class="relative z-10 text-center">
+    <div class="relative z-10 flex flex-col items-center justify-center text-center">
+      <img src="shinhanlogo.png" alt="신한장학재단" class="h-36 w-auto object-contain mb-14 opacity-95">
       <p class="text-5xl font-bold tracking-wide mb-6">감사합니다</p>
       <div class="w-24 h-0.5 bg-white/40 mx-auto my-8"></div>
       <p class="text-4xl font-semibold tracking-[0.15em] text-white/95">Q & A</p>
     </div>
-
-    <footer class="absolute bottom-0 left-0 right-0 h-14 bg-[#0046FF] flex items-center justify-center">
-      <img src="shinhanlogo.png" alt="신한장학재단" class="h-8 w-auto object-contain mr-4">
-      <span class="text-white text-lg font-medium tracking-wide">신한장학재단</span>
-    </footer>
   </section>
 
 </main>
